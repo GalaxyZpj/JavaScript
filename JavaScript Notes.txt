@@ -35,7 +35,7 @@ prompt();
 
 Operators:
   Math operators: +, -, *, /
-  Logical operators: <, >, <=, >=, ===, &&, ||, !
+  Logical operators: <, >, <=, >=, &&, ||, !
   Increment/Decrement: ++, --
 typeof operator:
   Returns the datatype of the variable.
@@ -59,15 +59,16 @@ if/else if/else statement:
 Ternary Operator:
   Simplified expression for if else statement
   eg.
-    var drink = age >= 18 ? 'Beer' : 'Juice';   //in this statement, the statement after ? is under if and the statement after : is under else block
+    var drink = age >= 18 ? 'Beer' : 'Juice';   //in this statement, the statement after ? is under if and the statement
+    after : is under else block
 Truthy and Falsy Value:
   Falsy values: undefined, null, 0, '', NaN
   Used as boolean conditions
   Can be used to check an unassigned variable using if statement
 
 Equality operators:
-  == does type coercion //doesnot compare datatype
-  === strictly compares including the datatype
+  ==, != does type coercion //doesnot compare datatype
+  ===, !== strictly compares including the datatype
 
 Defining a function:
     Syntax:
@@ -106,4 +107,36 @@ Objects:
   Calling values from the object:
   --name.p1
   --name['p1']    //Both returns the value of p1 in the object name
-  Objects are mutable
+  Objects are mutable.
+
+Object Methods:
+  Functions defined inside the object are called Methods.
+  Syntax:
+    keyValue: function(arg) {
+      =====
+    }
+  Calling the method:
+    name.keyValue(arg)
+  This keyword is used to  access a keyword within the object.
+  eg.
+    this.keyValue
+
+Switch statement:
+  Same as in  C.
+
+For loop:
+  Same as in C.
+
+While loop:
+  Same as in C.
+
+Break and Continue keyword:
+  Same as in C.
+
+Hoisting:
+  For functions:
+    When a program is executed, first the intepreter scans for all the function declarations in the code and register them in
+    its memory. This allows us to use the function before it is actually declared in the code.
+  For variables:
+    When a program is executed, intepreter scans for any variable declarations, and assign them with undefined type. Later
+    during code execution, it is assigned to its value and its datatype.
